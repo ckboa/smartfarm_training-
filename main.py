@@ -15,10 +15,10 @@ wifi.connect("ssid", "password")
 
 
 #  init  sensor and display
-sensor = dht.DHT22(Pin(5))
+sensor = dht.DHT22(Pin(16))
 i2c = SoftI2C(scl=Pin(22), sda=Pin(21))
 display = ssd1306.SSD1306_I2C(128, 64, i2c)
-adc35 = ADC(Pin(39))  
+adc35 = ADC(Pin(35))  
 
 
 #init relay 
