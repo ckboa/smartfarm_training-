@@ -142,7 +142,7 @@ class Connection(Protocol):
     _last_ping_time = 0
     _last_send_time = 0
 
-    def __init__(self, token, server='blynk.kku.ac.th', port=9443, heartbeat=10, rcv_buffer=1024, log=stub_log):
+    def __init__(self, token, server='blynk.kku.ac.th', port=8080, heartbeat=10, rcv_buffer=1024, log=stub_log):
         self.token = token
         self.server = server
         self.port = port
